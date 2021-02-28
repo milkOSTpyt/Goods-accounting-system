@@ -12,8 +12,11 @@ http://127.0.0.1:8000/
 API(Только для зарегистрированных пользователей):
 
 http://127.0.0.1:8000/auth/users/ - Регистрация (username, password, email(не обязательно))
-http://127.0.0.1:8000/auth/token/login/ - Вход для получения токена
+
+http://127.0.0.1:8000/auth/token/login/ - Вход для получения токена 
+
 http://127.0.0.1:8000/auth/users/me/  - Данные о текущем пользователе
+
 http://127.0.0.1:8000/auth/token/logout/ - Выход и удаление токена
 
 
@@ -44,4 +47,5 @@ http://127.0.0.1:8000/api/warehouse/1
 
 http://127.0.0.1:8000/api/sold_out_product/
 Ссылка для запроса списка проданных товаров с возможностью фильтрации ( 'name', 'shop', 'category', 'warehouse')
-Пример - http://127.0.0.1:8000/api/sold_out_product/?shop=1
+
+Пример фильтрации - http://127.0.0.1:8000/api/sold_out_product/?shop=1
