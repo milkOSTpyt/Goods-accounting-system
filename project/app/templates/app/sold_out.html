@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h4>Проданные товары</h4>
+    {% if sold_out_list %}
+    <table>
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th>Цена</th>
+            <th>Категория</th>
+            <th>Отгружен со склада</th>
+            <th>Продан в магазине</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for item in sold_out_list %}
+          <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.category }}</td>
+            <td>{{ item.warehouse }}</td>
+            <td>{{ item.shop }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</div>
+{% endblock content %}

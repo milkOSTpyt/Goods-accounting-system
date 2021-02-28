@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <table>
+        <thead>
+          <tr>
+            <th>Склад</th>
+          </tr>
+        </thead>
+        {% if warehouses_list %}
+        <tbody>
+        {% for item in warehouses_list %}
+          <tr>
+            <td><a href="{% url 'warehouse' item.pk %}">{{ item.name }}</a></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+        {% endif %}
+    </table>
+</div>
+{% endblock content %}

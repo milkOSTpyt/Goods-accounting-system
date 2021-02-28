@@ -1,0 +1,35 @@
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+nav {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content {
+	font-size: 20px;
+	padding: 10px;
+}
+
+ul li {
+	padding-bottom: 20px;
+	color: black;
+}
+
+li a {
+	color: #44423C;
+}
+
+#pagin {
+    display: flex;
+    justify-content: center;
+}

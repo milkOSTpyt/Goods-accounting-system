@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h4>Магазин: {{ title }}</h4>
+    {% if shop_products %}
+    <table>
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th>Цена</th>
+            <th>Категория</th>
+            <th>Склад</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for item in shop_products %}
+          <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.category }}</td>
+            <td>{{ item.warehouse }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</div>
+{% endblock content %}

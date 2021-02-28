@@ -1,0 +1,483 @@
+[
+  {
+    "model":"app.shop",
+    "pk": 1,
+    "fields": {
+      "name": "Waikiki",
+      "domain": "waikiki.by",
+      "link": "https://waikiki.by"
+    }
+  },
+  {
+    "model":"app.shop",
+    "pk": 2,
+    "fields": {
+      "name": "БелОбувь",
+      "domain": "bel-shoes.by",
+      "link": "https://bel-shoes.by"
+    }
+  },
+   {
+    "model":"app.shop",
+    "pk": 3,
+    "fields": {
+      "name": "БелМебель",
+      "domain": "shop-furniture.by",
+      "link": "https://shop_furniture.by"
+    }
+  },
+  {
+    "model":"app.shop",
+    "pk": 4,
+    "fields": {
+      "name": "Чайный дом",
+      "domain": "tea-home.by",
+      "link": "https://tea-home.by"
+    }
+  },
+  {
+    "model":"app.shop",
+    "pk": 5,
+    "fields": {
+      "name": "Dream Tea",
+      "domain": "dream-tea.by",
+      "link": "https://dream-tea.by"
+    }
+  },
+  {
+    "model":"app.shop",
+    "pk": 6,
+    "fields": {
+      "name": "Кофе Бум",
+      "domain": "boom-coffee.by",
+      "link": "https://boom-coffee.by"
+    }
+  },
+  {
+    "model":"app.shop",
+    "pk": 7,
+    "fields": {
+      "name": "My book",
+      "domain": "my-book.by",
+      "link": "https://my-book.by"
+    }
+  },
+  {
+    "model":"app.warehouse",
+    "pk": 1,
+    "fields": {
+      "name": "Брест",
+      "shop": [1]
+    }
+  },
+  {
+    "model":"app.warehouse",
+    "pk": 2,
+    "fields": {
+      "name": "Минск",
+      "shop": [1, 2]
+    }
+  },
+  {
+    "model":"app.warehouse",
+    "pk": 3,
+    "fields": {
+      "name": "Гродно",
+      "shop": [3]
+    }
+  },
+  {
+    "model":"app.warehouse",
+    "pk": 4,
+    "fields": {
+      "name": "Гомель",
+      "shop": [5]
+    }
+  },
+  {
+    "model":"app.warehouse",
+    "pk": 5,
+    "fields": {
+      "name": "Могилев",
+      "shop": [4]
+    }
+  },
+  {
+    "model":"app.category",
+    "pk": 1,
+    "fields": {
+      "title": "Обувь"
+    }
+  },
+  {
+    "model":"app.category",
+    "pk": 2,
+    "fields": {
+      "title": "Кофе"
+    }
+  },
+  {
+    "model":"app.category",
+    "pk": 3,
+    "fields": {
+      "title": "Чай"
+    }
+  },
+  {
+    "model":"app.category",
+    "pk": 4,
+    "fields": {
+      "title": "Одежда"
+    }
+  },
+  {
+    "model":"app.category",
+    "pk": 5,
+    "fields": {
+      "title": "Мебель"
+    }
+  },
+  {
+    "model":"app.category",
+    "pk": 6,
+    "fields": {
+      "title": "Книги"
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 1,
+    "fields": {
+      "name": "Кофе Nescafe",
+      "price": 12.50,
+      "sold_out": false,
+      "category": 2,
+      "warehouse": 1,
+      "shop": 6
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 2,
+    "fields": {
+      "name": "Чай Tess",
+      "price": 10.11,
+      "sold_out": false,
+      "category": 3,
+      "warehouse": 2,
+      "shop": 4
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 3,
+    "fields": {
+      "name": "Чай Curtis",
+      "price": 7.53,
+      "sold_out": false,
+      "category": 3,
+      "warehouse": 3,
+      "shop": 5
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 4,
+    "fields": {
+      "name": "Стол",
+      "price": 59,
+      "sold_out": false,
+      "category": 5,
+      "warehouse": 4,
+      "shop": 3
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 5,
+    "fields": {
+      "name": "Стул",
+      "price": 22.50,
+      "sold_out": true,
+      "category": 5,
+      "warehouse": 2,
+      "shop": 3
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 6,
+    "fields": {
+      "name": "Кухня",
+      "price": 353,
+      "sold_out": false,
+      "category": 5,
+      "warehouse": 5,
+      "shop": 3
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 7,
+    "fields": {
+      "name": "Кроссовки Nike",
+      "price": 201.53,
+      "sold_out": false,
+      "category": 1,
+      "warehouse": 3,
+      "shop": 2
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 8,
+    "fields": {
+      "name": "Кроссовки Adidas",
+      "price": 250.53,
+      "sold_out": false,
+      "category": 1,
+      "warehouse": 3,
+      "shop": 2
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 9,
+    "fields": {
+      "name": "Кроссовки Puma",
+      "price": 135.50,
+      "sold_out": false,
+      "category": 1,
+      "warehouse": 1,
+      "shop": 2
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 10,
+    "fields": {
+      "name": "Худи1",
+      "price": 70,
+      "sold_out": false,
+      "category": 4,
+      "warehouse": 2,
+      "shop": 1
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 11,
+    "fields": {
+      "name": "Худи2",
+      "price": 74,
+      "sold_out": false,
+      "category": 4,
+      "warehouse": 2,
+      "shop": 1
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 12,
+    "fields": {
+      "name": "Худи13",
+      "price": 80,
+      "sold_out": false,
+      "category": 4,
+      "warehouse": 5,
+      "shop": 1
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 13,
+    "fields": {
+      "name": "Худи1",
+      "price": 76,
+      "sold_out": false,
+      "category": 4,
+      "warehouse": 4,
+      "shop": 1
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 14,
+    "fields": {
+      "name": "Штаны",
+      "price": 50,
+      "sold_out": false,
+      "category": 4,
+      "warehouse": 5,
+      "shop": 1
+    }
+  },
+   {
+    "model":"app.product",
+    "pk": 15,
+    "fields": {
+      "name": "Штаны2",
+      "price": 51,
+      "sold_out": false,
+      "category": 4,
+      "warehouse": 1,
+      "shop": 1
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 16,
+    "fields": {
+      "name": "Штаны3",
+      "price": 41,
+      "sold_out": false,
+      "category": 4,
+      "warehouse": 5,
+      "shop": 1
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 17,
+    "fields": {
+      "name": "Чай Curtis2",
+      "price": 8,
+      "sold_out": false,
+      "category": 3,
+      "warehouse": 5,
+      "shop": 5
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 18,
+    "fields": {
+      "name": "Чай Tess2",
+      "price": 11,
+      "sold_out": false,
+      "category": 3,
+      "warehouse": 1,
+      "shop": 5
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 19,
+    "fields": {
+      "name": "Чай Tess3",
+      "price": 11.66,
+      "sold_out": true,
+      "category": 3,
+      "warehouse": 5,
+      "shop": 5
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 20,
+    "fields": {
+      "name": "Чай Tess4",
+      "price": 11.76,
+      "sold_out": true,
+      "category": 3,
+      "warehouse": 1,
+      "shop": 5
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 21,
+    "fields": {
+      "name": "Чай Tess4",
+      "price": 11.76,
+      "sold_out": true,
+      "category": 3,
+      "warehouse": 1,
+      "shop": 5
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 22,
+    "fields": {
+      "name": "Книга Фактологичность",
+      "price": 23.50,
+      "sold_out": false,
+      "category": 6,
+      "warehouse": 5,
+      "shop": 7
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 23,
+    "fields": {
+      "name": "Книга Источник",
+      "price": 25.50,
+      "sold_out": false,
+      "category": 6,
+      "warehouse": 1,
+      "shop": 7
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 24,
+    "fields": {
+      "name": "Книга Netflix",
+      "price": 28,
+      "sold_out": false,
+      "category": 6,
+      "warehouse": 3,
+      "shop": 7
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 25,
+    "fields": {
+      "name": "Стол Ikea",
+      "price": 193.52,
+      "sold_out": false,
+      "category": 5,
+      "warehouse": 2,
+      "shop": 3
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 26,
+    "fields": {
+      "name": "Стул Ikea",
+      "price": 19.52,
+      "sold_out": true,
+      "category": 5,
+      "warehouse": 4,
+      "shop": 3
+    }
+  },
+  {
+    "model":"app.product",
+    "pk": 27,
+    "fields": {
+      "name": "Кофе Jacobs",
+      "price": 13,
+      "sold_out": true,
+      "category": 2,
+      "warehouse": 4,
+      "shop": 6
+    }
+  },
+  {
+    "model": "app.product",
+    "pk": 28,
+    "fields": {
+      "name": "Кофе Жокей",
+      "price": 9.33,
+      "sold_out": false,
+      "category": 2,
+      "warehouse": 3,
+      "shop": 6
+    }
+  }
+]

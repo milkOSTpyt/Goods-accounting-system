@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <ul>
+        <li><a href="{% url 'shops' %}">Магазины</a></li>
+        <li><a href="{% url 'warehouses' %}">Склады</a></li>
+        <li><a href="{% url 'sold_out' %}">Проданные товары</a></li>
+    </ul>
+</div>
+{% endblock content %}
