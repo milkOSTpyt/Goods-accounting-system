@@ -10,7 +10,7 @@ urlpatterns = [
     path('warehouse/<int:warehouse_id>/', DetailWarehouse.as_view(),
          name='warehouse'),
     path('sold_out/', SoldOutProduct.as_view(), name='sold_out'),
-    path('login/', LoginUser.as_view(), name='login'),
-    path('register/', RegisterUser.as_view(), name='register'),
-    path('logout/', LogoutUser.as_view(), name='logout'),
+    path('login/', LoginUser.as_view(), name='_login'),
+    path('register/', RegisterUser.as_view(), name='_register'),
+    path('logout/', LogoutUser.as_view(), name='_logout'),
 ]

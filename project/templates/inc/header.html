@@ -4,10 +4,10 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
           {% if request.user.is_authenticated %}
             <li><a href="#">{{user.username|title}}</a></li>
-            <li><a href="{% url 'logout' %}">Выход</a></li>
+            <li><a href="{% url '_logout' %}">Выход</a></li>
           {% else %}
-            <li><a href="{% url 'register' %}">Регистрация</a></li>
-            <li><a href="{% url 'login' %}">Вход</a></li>
+            <li><a href="{% url '_register' %}">Регистрация</a></li>
+            <li><a href="{% url '_login' %}">Вход</a></li>
           {% endif %}
       </ul>
     </div>
