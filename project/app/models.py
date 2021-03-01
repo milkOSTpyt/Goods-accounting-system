@@ -43,16 +43,20 @@ class Category(models.Model):
 class Product(models.Model):
     """Товар"""
     name = models.CharField(max_length=255, verbose_name='Наименование')
-    price = models.DecimalField(max_digits=10, decimal_places=2,
+    price = models.DecimalField(max_digits=10,
+                                decimal_places=2,
                                 verbose_name='Цена')
     sold_out = models.BooleanField(default=False, verbose_name='Продан ли')
-    category = models.ForeignKey(Category, on_delete=models.PROTECT,
+    category = models.ForeignKey(Category,
+                                 on_delete=models.PROTECT,
                                  verbose_name='Категория',
                                  related_name='category')
-    warehouse = models.ForeignKey(Warehouse, on_delete=models.CASCADE,
+    warehouse = models.ForeignKey(Warehouse,
+                                  on_delete=models.CASCADE,
                                   verbose_name='Склад',
                                   related_name='warehouse')
-    shop = models.ForeignKey(Shop, on_delete=models.CASCADE,
+    shop = models.ForeignKey(Shop,
+                             on_delete=models.CASCADE,
                              verbose_name='Магазин',
                              related_name='shop')
 
