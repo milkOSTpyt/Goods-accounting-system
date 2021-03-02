@@ -19,7 +19,7 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: ls -a via ssh
-        uses: fifsky/ssh-action@master
+        uses: fifsky/ssh-action@main
         with:
           command: |
             cd Goods-accounting-system
