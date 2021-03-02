@@ -19,13 +19,13 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: ls -a via ssh
-        uses: fifsky/ssh-action@main
-        with:
-          command: |
-            cd Goods-accounting-system
-            git pull
-            supervisorctl restart gas
-          host: ${{secrets.HOST}}
-          user: artem
-          pass: ${{secrets.PRIVATE_KEY}}
-          args: "-tt -vvv"
+      uses: fifsky/ssh-action@main
+      with:
+        command: |
+          cd Goods-accounting-system
+          git pull
+          supervisorctl restart gas
+        host: ${{secrets.HOST}}
+        user: artem
+        pass: ${{secrets.PRIVATE_KEY}}
+        args: "-tt -vvv"
